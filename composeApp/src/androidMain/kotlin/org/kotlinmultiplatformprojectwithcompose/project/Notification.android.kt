@@ -21,7 +21,7 @@ actual class Notification(private val context: Context) {
             .setSmallIcon(R.drawable.baseline_notifications_24)
             .setContentTitle("Try Notification")
             .setContentText("This is the try notification")
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
             .build()
 
         //Showing notification
@@ -40,7 +40,7 @@ actual class Notification(private val context: Context) {
                     )
                 }
             }
-            notify(NotificationManagerCompat.IMPORTANCE_DEFAULT, notification)
+            notify(NotificationManagerCompat.IMPORTANCE_HIGH, notification)
 
         }
 

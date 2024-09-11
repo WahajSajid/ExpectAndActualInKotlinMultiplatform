@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         val channel = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel(
                 "try_notification", "Try Notification",
-                NotificationManager.IMPORTANCE_DEFAULT
+                NotificationManager.IMPORTANCE_HIGH
             )
         } else {
             TODO("VERSION.SDK_INT < O")
